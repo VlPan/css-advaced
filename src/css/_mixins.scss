@@ -1,0 +1,30 @@
+@mixin clearFix {
+  &::after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+@mixin resetLink($color) {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color;
+}
+
+@mixin center-text(){
+  text-align: center;
+}
+
+@mixin flex-row(){
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin flex-column(){
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
